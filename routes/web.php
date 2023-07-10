@@ -13,20 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
 
     $name = "PastaFredda";
     return view('home', compact('name'));
-    $url= route('home');
-    return redirect()->route('home');
 
 })->name('home');
 
 Route::get('/new-home', function () {
-
     return view('new-home');
-    $url= route('new-home');
-    return redirect()->route('new-home');
+
 })->name('new-home');
 
 

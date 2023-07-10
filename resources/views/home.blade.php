@@ -9,7 +9,8 @@
 
 <body>
     <h1>Hello World from {{ $name }}</h1>
-    <a href="new-home">vai a questo link</a>
+    <a href="{{ route('new-home') }}">vai a questo link</a>
+
 </body>
 
 </html>

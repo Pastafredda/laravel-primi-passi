@@ -10,7 +10,7 @@
 
 <body>
     <h1>Hello world 2</h1>
-    <a href="home">ritorna a prima</a>
+    <a href="{{ route('home') }}">ritorna a prima</a>
 </body>
 
 </html>
