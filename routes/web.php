@@ -17,5 +17,10 @@ Route::get('/', function () {
 
     $name = "PastaFredda";
 
+
     return view('home', compact('name'));
-});
+
+})->name('new-home');
+
+$url= route('new-home');
+return redirect()->route('new-home');
